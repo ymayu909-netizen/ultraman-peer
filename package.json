@@ -1,0 +1,15 @@
+{
+  "name": "ultraman-peer-server",
+  "version": "1.0.0",
+  "description": "奥特曼卡牌对战 - PeerJS 自建信令服务器（仅负责撮合，不传输游戏数据）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "peer": "^1.0.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

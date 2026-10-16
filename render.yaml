@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ultraman-peer
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /
+    envVars:
+      - key: PEER_KEY
+        value: peerjs
+      - key: PEER_PATH
+        value: /
+      # PORT 由 Render 自动注入，无需设置
